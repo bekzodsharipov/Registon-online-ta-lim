@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registon online ta’lim</title>
+  <style>
+* {margin: 0;padding: 0;box-sizing: border-box;}body, html {overflow-x: hidden;}body {background-color: #070707;}.wrapper {overflow-x: hidden;}#main-content {position: relative;}.container {max-width: 440px;width: 100%;margin: 0 auto;padding: 0 10px;padding-top: 0;font: 400 16px/150% sans-serif;}.header {width: 100%;box-shadow: 0px 3px 4.6px 0px #00000017;background-color: #2E2E2E;border-radius: 4px 4px 20px 20px;padding: 12px 18px;display: flex;align-items: center;justify-content: space-between;margin-bottom: 15px;min-width: 313px;max-width: 390px;}.header__box {display: flex;align-items: center;gap: 5px;}.header__boxs {display: flex;align-items: center;gap: 4px;}.header__text {font: 400 16px/100% Involve, sans-serif;color: #fff;}.header__time {font: 400 12px/120% Involve, sans-serif;color: white;}.title {font: 700 clamp(27px, 8.5vw, 32px) / 110% "Kuunari", sans-serif;text-transform: uppercase;color: white;text-align: center;margin-bottom: 3px;}.title span {color: #FF773D;}.expert__img {object-fit: contain;max-width: clamp(275px, 86vw, 303px);width: 100%;height: auto;position: relative;z-index: 15;display: flex;flex-direction: column;align-items: center;margin: 0 auto;}.speaker__bg {background-image: url(./images/bg.avif);background-repeat: no-repeat;background-size: contain;background-position: center;max-width: 458px;height: 266px;width: 100%;position: absolute;top: 125px;left: 50%;transform: translateX(-50%);}.speaker__gradient {background-color: #D9D9D9;filter: blur(50px);width: 151px;height: 151px;position: absolute;top: 221px;left: 33%;}.center__info {display: flex;align-items: center;justify-content: center;}.center__info-title {font-family: Montserrat, sans-serif;font-weight: 700;font-size: 22px;line-height: 23px;text-align: center;text-transform: uppercase;color: white;}.center__info img {width: 78px;height: 78px;}.timer {font-family: "Bebas Neue", sans-serif;font-weight: 400;font-size: 38px;line-height: 120%;text-align: center;color: #FF9838;margin-bottom: 13px;}.shaddow {max-width: 411px;width: 100%;margin-bottom: -35px;}.shaddows {max-width: 411px;width: 100%;position: absolute;top: 343px;z-index: 20;}.container {max-width: 490px;width: 100%;margin: 0 auto;padding: 0 10px;display: flex;flex-direction: column;align-items: center;font-family: sans-serif;}.webinar-learn {margin-bottom: -60px;}.webinar-learn__container {display: flex;flex-direction: column;align-items: center;}.webinar-heading2 {font-family: "Bebas Neue", sans-serif;font-weight: 400;font-size: clamp(32px, 10vw, 38px);line-height: 100%;text-align: center;text-transform: uppercase;margin-bottom: 36px;color: white;}.webinar-learn__list {display: flex;flex-direction: column;gap: 40px;margin-bottom: 29px;list-style: none;}.webinar-learn__list__item {border-radius: 15px;background-color: white;padding: 34px 22px 24px 33px;color: #000;text-align: center;position: relative;}.webinar-learn__list__item:nth-child(2) {padding: 24px 21px 13px 20px;}.webinar-learn__list__item:nth-child(3) {padding: 34px 23px 24px 43px;}.webinar-learn__list__item:nth-child(4) {padding: 34px 16px 24px 16px;}.webinar-learn__list__item__number {display: flex;align-items: center;justify-content: center;width: 34px;height: 34px;background: linear-gradient(180deg, #FF8B1E 0%, #995312 100%);border-radius: 8px;font: 600 20px/100% Inter, sans-serif;color: #fff;position: absolute;top: -17px;left: 50%;transform: translateX(-50%);}.webinar-learn__list__item__text {font: 400 clamp(14px, 4.4vw, 16px)/130% Montserrat, sans-serif;text-align: center;}.webinar-learn__list__item__text span {font-weight: 600;}.button {padding: 33px 0;font-family: Inter, sans-serif;font-weight: 700;font-size: clamp(17px, 5.3vw, 18px);line-height: 151%;text-transform: uppercase;color: #45350F;background: radial-gradient(133.5% 415.84% at 48.59% 58.56%, #FFD36D 27.4%, #C0A566 100%);border-radius: 13px;box-shadow: 0px 24.84px 74.51px -11.29px #D0B67870;box-shadow: 0px 5px 0px 0px #967D40;max-width: 338px;width: 100%;border: none;margin-top: -10px;cursor: pointer;position: relative;z-index: 20;display: flex;align-items: center;gap: 12px;justify-content: center;margin-left: auto;margin-right: auto;}@media (max-width:340px) {.shaddows {top: 354px;}.shaddow {margin-bottom: -25px;}.webinar-learn__list {margin-bottom: 35px;}}
+  </style>
+  <link rel="stylesheet" href="./css/modal.css" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="/css/modal.css" />
+  </noscript>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <header class="header">
+        <div class="header__box">
+          <img src="./images/calendar.png" alt="Kalendar belgisi" style="margin-top: -3px;" class="header__text__img"
+            width="18" height="18" loading="lazy" decoding="async">
+          <p class="header__text">15-16-Fevral |20:00</p>
+        </div>
+        <div class="header__boxs">
+          <img src="./images/logo.avif" loading="lazy" decoding="async" width="28" height="21" alt="logo">
+          <p class="header__time">Registon <br> online ta’lim</p>
+        </div>
+      </header>
+      <main id="main-content">
+        <h1 class="title">
+          Attestatsiyadan <span>yuqori <br>
+            ball</span> olib <span>70% ustamaga</span> ega <br> bo’lish strategiyasi
+        </h1>
+
+        <img src="/images/speaker.avif" alt="Investor rasmi" class="expert__img" decoding="async" loading="lazy"
+          width="303" height="269">
+        <div class="speaker__bg"></div>
+        <div class="speaker__gradient"></div>
+
+        <img class="shaddows" src="./images/shaddow.avif" loading="lazy" decoding="async" alt="shaddow">
+        <button class="button registerBtn">
+          darsga qatnashish
+          <svg width="17" height="17" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="20" height="20" rx="2" fill="#554113" />
+            <path
+              d="M7.41699 5.90039C7.55341 5.90043 7.68423 5.9536 7.78125 6.04883L11.9482 10.1396C11.9962 10.1868 12.0345 10.2429 12.0605 10.3047C12.0866 10.3665 12.0996 10.4329 12.0996 10.5C12.0996 10.5671 12.0866 10.6335 12.0605 10.6953C12.0345 10.7571 11.9962 10.8132 11.9482 10.8604L7.78125 14.9512C7.73323 14.9983 7.67674 15.0361 7.61426 15.0615C7.55173 15.087 7.48457 15.0996 7.41699 15.0996C7.3494 15.0996 7.28227 15.087 7.21973 15.0615C7.15715 15.0361 7.09983 14.9984 7.05176 14.9512C7.00382 14.904 6.96552 14.8479 6.93945 14.7861C6.91338 14.7243 6.90041 14.6579 6.90039 14.5908C6.90039 14.5238 6.91342 14.4573 6.93945 14.3955C6.96558 14.3336 7.00368 14.2767 7.05176 14.2295L10.8506 10.5L7.05176 6.77051C6.95463 6.67514 6.90039 6.54485 6.90039 6.40918C6.90042 6.27369 6.95484 6.14414 7.05176 6.04883C7.14882 5.95352 7.2805 5.90039 7.41699 5.90039Z"
+              fill="white" stroke="white" stroke-width="0.2" />
+          </svg>
+        </button>
+
+        <div class="center__info">
+          <h3 class="center__info-title">Bepul</h3>
+          <img src="./images/arrow.avif" loading="lazy" decoding="async" width="78" height="78" alt="arrow">
+        </div>
+
+        <div class="timer" id="timer">2:00</div>
+
+        <section class="webinar-learn webinar-section">
+          <div class="webinar-learn__container container">
+            <h2 class="webinar-heading2">ochiq darsda o’rganasiz:</h2>
+            <ul class="webinar-learn__list">
+              <li class="webinar-learn__list__item">
+                <span class="webinar-learn__list__item__number">1</span>
+                <p class="webinar-learn__list__item__text">
+                  Attestatsiyada <span>eng ko‘p <br> tushadigan mavzular</span> to'plamini
+                </p>
+              </li>
+              <li class="webinar-learn__list__item">
+                <span class="webinar-learn__list__item__number">2</span>
+                <p class="webinar-learn__list__item__text">
+                  <span>Real attestatsiya</span> formatidagi <br> diagnostik testlar tahlilini
+                </p>
+              </li>
+              <li class="webinar-learn__list__item">
+                <span class="webinar-learn__list__item__number">3</span>
+                <p class="webinar-learn__list__item__text">
+                  <span>Pedagogik mahoratni</span> oshirish <br> texnikalarini o’rganasiz
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+
+        <img class="shaddow" src="./images/shaddow.avif" loading="lazy" decoding="async" alt="shaddow">
+        <button class="button registerBtn">
+          darsga qatnashish
+          <svg width="17" height="17" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="20" height="20" rx="2" fill="#554113" />
+            <path
+              d="M7.41699 5.90039C7.55341 5.90043 7.68423 5.9536 7.78125 6.04883L11.9482 10.1396C11.9962 10.1868 12.0345 10.2429 12.0605 10.3047C12.0866 10.3665 12.0996 10.4329 12.0996 10.5C12.0996 10.5671 12.0866 10.6335 12.0605 10.6953C12.0345 10.7571 11.9962 10.8132 11.9482 10.8604L7.78125 14.9512C7.73323 14.9983 7.67674 15.0361 7.61426 15.0615C7.55173 15.087 7.48457 15.0996 7.41699 15.0996C7.3494 15.0996 7.28227 15.087 7.21973 15.0615C7.15715 15.0361 7.09983 14.9984 7.05176 14.9512C7.00382 14.904 6.96552 14.8479 6.93945 14.7861C6.91338 14.7243 6.90041 14.6579 6.90039 14.5908C6.90039 14.5238 6.91342 14.4573 6.93945 14.3955C6.96558 14.3336 7.00368 14.2767 7.05176 14.2295L10.8506 10.5L7.05176 6.77051C6.95463 6.67514 6.90039 6.54485 6.90039 6.40918C6.90042 6.27369 6.95484 6.14414 7.05176 6.04883C7.14882 5.95352 7.2805 5.90039 7.41699 5.90039Z"
+              fill="white" stroke="white" stroke-width="0.2" />
+          </svg>
+        </button>
+
+        <div class="center__info" style="margin-bottom: 10px;">
+          <h3 class="center__info-title">Bepul</h3>
+          <img src="./images/arrow.avif" loading="lazy" decoding="async" width="78" height="78" alt="arrow">
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="registrationModal" class="homeModal" style="display: none">
+    <div class="homeModalOverlay"></div>
+    <div class="homeFormContainer">
+      <button class="closeButton" id="closeModalBtn" aria-label="Modalni yopish" title="Yopish">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+          <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div class="homeFormTop">
+        <h1 class="homeFormTopTitle">
+          Bepul qatnashish uchun ma'lumotlaringizni kiriting!
+        </h1>
+      </div>
+      <form id="registrationForm" name="contact-form">
+        <!-- ISM -->
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="name">Ismingiz:</label>
+          <input class="HomeFormRowInput" type="text" id="name" name="name" placeholder="Ismingizni kiriting"
+            autocomplete="name" />
+          <p class="homeFormErrorText" id="nameError" style="display: none">
+            ❌ Ismingizni kiriting!
+          </p>
+        </div>
+
+        <!-- TELEFON -->
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
+
+          <div class="phone-input-container">
+            <!-- LEFT: country -->
+            <button type="button" class="selected-country" id="selectedCountry">
+              <span class="selected-flag" id="selectedCountryFlag">🇺🇿</span>
+
+              <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <span class="selected-code" id="selectedCountryCodeText">+998</span>
+            </button>
+
+            <!-- dropdown -->
+            <div class="country-dropdown" id="countryDropdown" style="display:none"></div>
+
+            <!-- RIGHT: phone input (number span inside) -->
+            <div class="phone-field">
+              <input class="HomeFormRowInput phone-input" type="tel" id="phone" name="phone" inputmode="numeric"
+                placeholder="88 888 88 88" autocomplete="tel"
+                style="border: none; background-color: transparent;padding-left: 5px;" />
+            </div>
+          </div>
+
+          <p class="homeFormErrorText" id="phoneError" style="display:none">
+            ❌ Telefon raqam mos emas!
+          </p>
+        </div>
+
+        <button type="submit" class="HomeFormBtn" id="submitBtn">
+          DAVOM ETISH
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <script defer src="./js/phoneFormatter.js"></script>
+  <script defer src="./js/app.js"></script>
+</body>
+
+
+</html>

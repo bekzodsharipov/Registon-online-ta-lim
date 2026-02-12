@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registon online ta’lim</title>
+    <style>
+.bg {position: absolute;z-index: -1;width: clamp(320px, 100vw, 441px);object-fit: cover;}a {text-decoration: none }* {margin: 0;padding: 0;box-sizing: border-box }body {font-family: "ubuntu-Regular", sans-serif }.container {width: 100%;max-width: 500px;padding-left: 20px;padding-right: 20px;margin-left: auto;margin-right: auto }.header__container {display: flex;flex-direction: column;align-items: center;justify-content: center }.header__box {padding: 10px 30px;border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;border-bottom: 1px;border-right: 1px;border-left: 1px;border-top: none;border-style: solid;border-color: #C2C2C2;text-align: center;margin-bottom: 15px }.header__title {font-family: "ubuntu-Bold", sans-serif;font-size: 18px;margin-bottom: 4px;text-transform: uppercase;background: linear-gradient(90deg, #E4686D, #B02A30);-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-clip: text;color: transparent;}.header__text {font-family: "ubuntu-Regular", sans-serif;font-size: 14px;line-height: 115% }.hero__title {font-size: clamp(20px, 5.9vw, 26px);font-family: "Poppins", sans-serif;text-align: center;line-height: 120%;text-transform: uppercase;margin-bottom: 15px;font-weight: 800;}.hero__title span {color: #C82E2E;}.hero__list {list-style: none;display: flex;flex-direction: column;gap: 6px;align-items: center;margin-bottom: 12px }.texts {font-family: Poppins, sans-serif;font-weight: 500;font-size: 14px;line-height: 100%;color: #FE4D01;text-align: center;}.hero__list__item {display: flex;gap: 7px;align-items: center;padding: 8px;border: 0.5px solid #C2C2C2;border-radius: 10px;width: 100%;max-width: 324px }.hero__expert {object-fit: cover;max-width: 390px;width: 100%;}.hero__list__item p {font-family: Ubuntu, sans-serif;font-weight: 400;font-size: clamp(13px, 4.1vw, 16px);line-height: 125%;}.hero__list__item__box {width: 46px;height: 36px;border-radius: 5px;background-color: #FFE9B4;position: relative;}.hero__list__item__box img {object-fit: contain;position: absolute;bottom: -6px;right: 0;width: 46px;height: 48px;}.timer {font-family: Poppins, sans-serif;font-weight: 600;font-size: 32px;line-height: 100%;text-align: center;margin-bottom: 11px;}.hero__button {cursor: pointer; background-color: #C5392C;box-shadow: 0px 6px 0px 0px #8A1E14;box-shadow: 0px 4px 15px 0px #B02A3066;padding: 24px 0;max-width: 352px;width: 100%;text-align: center;border-radius: 100px;color: white;border: none;text-transform: uppercase;outline: none;font-size: clamp(17px, 5.2vw, 20px);font-family: "ubuntu-Bold", sans-serif;font-weight: 700 }.button-wrapper {display: flex;justify-content: center;margin-bottom: 15px }.img__container {display: flex;justify-content: center }
+    </style>
+    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="./css/main.css" />
+    </noscript>
+</head>
+
+<body>
+    <div class="box">
+        <header class="header">
+            <div class="container header__container">
+                <img src="./images/bg.avif" width="390" height="80" decoding="async" loading="lazy" alt="bg" class="bg">
+                <div class="header__box">
+                    <h3 class="header__title">15-16-FEvral | 20:00</h3>
+                    <p class="header__text">2 kunlik dars – BEPUL</p>
+                </div>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="container hero__container">
+                <h1 class="hero__title">
+                    Attestatsiyadan <span>yuqori <br> ball olib 70% ustamaga</span> <br> ega bo’lish strategiyasi!
+                </h1>
+                <ul class="hero__list">
+                    <li class="hero__list__item">
+                        <div class="hero__list__item__box">
+                            <img src="./images/1.avif" alt="1" width="46" height="34" decoding="async" loading="lazy">
+                        </div>
+                        <p>
+                            Attestatsiyada <b>eng ko‘p <br> tushadigan mavzular</b> to'plamini
+                        </p>
+                    </li>
+                    <li class="hero__list__item">
+                        <div class="hero__list__item__box">
+                            <img src="./images/2.avif" alt="1" width="46" height="34" decoding="async" loading="lazy">
+                        </div>
+                        <p>
+                            <b>Real attestatsiya</b> formatidagi <br> diagnostik testlar tahlilini
+                        </p>
+                    </li>
+                    <li class="hero__list__item">
+                        <div class="hero__list__item__box">
+                            <img src="./images/3.avif" alt="1" width="46" height="34" decoding="async" loading="lazy">
+                        </div>
+                        <p>
+                            <b>Pedagogik mahoratni</b> oshirish <br> texnikalarini o’rganasiz
+                        </p>
+                    </li>
+                </ul>
+                <div class="button-wrapper">
+                    <button class="hero__button registerBtn">
+                        Darsda bepul qatnashish
+                    </button>
+                </div>
+                <div class="timer" id="timer">2:00</div>
+                <p class="texts">Registon online ta’lim</p>
+            </div>
+        </section>
+    </div>
+    <div class="container img__container">
+        <img src="./images/expert.avif" alt="expert" width="390" height="260" loading="lazy" decoding="async"
+            class="hero__expert">
+    </div>
+
+    <!-- Modal -->
+  <div id="registrationModal" class="homeModal" style="display: none">
+    <div class="homeModalOverlay"></div>
+    <div class="homeFormContainer">
+      <button class="closeButton" id="closeModalBtn" aria-label="Modalni yopish" title="Yopish">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+          <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div class="homeFormTop">
+        <h1 class="homeFormTopTitle">
+          Bepul qatnashish uchun ma'lumotlaringizni kiriting!
+        </h1>
+      </div>
+      <form id="registrationForm" name="contact-form">
+        <!-- ISM -->
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="name">Ismingiz:</label>
+          <input class="HomeFormRowInput" type="text" id="name" name="name" placeholder="Ismingizni kiriting"
+            autocomplete="name" />
+          <p class="homeFormErrorText" id="nameError" style="display: none">
+            ❌ Ismingizni kiriting!
+          </p>
+        </div>
+
+        <!-- TELEFON -->
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
+
+          <div class="phone-input-container">
+            <!-- LEFT: country -->
+            <button type="button" class="selected-country" id="selectedCountry">
+              <span class="selected-flag" id="selectedCountryFlag">🇺🇿</span>
+
+              <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <span class="selected-code" id="selectedCountryCodeText">+998</span>
+            </button>
+
+            <!-- dropdown -->
+            <div class="country-dropdown" id="countryDropdown" style="display:none"></div>
+
+            <!-- RIGHT: phone input (number span inside) -->
+            <div class="phone-field">
+              <input class="HomeFormRowInput phone-input" type="tel" id="phone" name="phone" inputmode="numeric"
+                placeholder="88 888 88 88" autocomplete="tel"
+                style="border: none; background-color: transparent;padding-left: 5px;" />
+            </div>
+          </div>
+
+          <p class="homeFormErrorText" id="phoneError" style="display:none">
+            ❌ Telefon raqam mos emas!
+          </p>
+        </div>
+
+        <button type="submit" class="HomeFormBtn" id="submitBtn">
+          DAVOM ETISH
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="../js/phoneFormatter.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+
+</html>
